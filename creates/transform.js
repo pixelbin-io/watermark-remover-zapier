@@ -13,7 +13,7 @@ const perform = async (z, bundle) => {
 				},
 				body: JSON.stringify({
 					url: bundle.inputData.url,
-					path: "/__zapier_Transformation",
+					path: "/__zapier/transformations",
 					tags: bundle.inputData.tags,
 					access: "public-read",
 					metadata: {},
@@ -143,5 +143,8 @@ module.exports = {
 					"(x-axis_y-axis_width_height) For full image use: 0_0_100_100.Values should be between 0 and 100.",
 			},
 		],
+		sample: {
+			url: "https://cdn.pixelbin.io/v2/muddy-lab-41820d/t.resize(w:128,h:128)/dummy_image.png",
+		},
 	},
 };
